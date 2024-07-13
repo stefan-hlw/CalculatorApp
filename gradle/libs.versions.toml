@@ -39,4 +39,3 @@ truth = { module = "com.google.truth:truth", version = "1.4.3" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
