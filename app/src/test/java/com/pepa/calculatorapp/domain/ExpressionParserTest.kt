@@ -1,7 +1,8 @@
 package com.pepa.calculatorapp.domain
 
-import com.google.common.truth.Truth.assertThat
 import org.junit.Test
+import strikt.api.expectThat
+import strikt.assertions.isEqualTo
 
 class ExpressionParserTest {
 
@@ -25,7 +26,7 @@ class ExpressionParserTest {
             ExpressionPart.Number(3.0),
         )
 
-        assertThat(expectedExpressionParts).isEqualTo(actualExpressionParts)
+        expectThat(actualExpressionParts).isEqualTo(expectedExpressionParts)
     }
 
     @Test
@@ -42,7 +43,7 @@ class ExpressionParserTest {
             ExpressionPart.Number(1.8),
         )
 
-        assertThat(expectedExpressionParts).isEqualTo(actualExpressionParts)
+        expectThat(actualExpressionParts).isEqualTo(expectedExpressionParts)
     }
 
     @Test
@@ -61,6 +62,6 @@ class ExpressionParserTest {
             ExpressionPart.Parentheses(ParenthesesType.Closing),
         )
 
-        assertThat(expectedExpressionParts).isEqualTo(actualExpressionParts)
+        expectThat(actualExpressionParts).isEqualTo(expectedExpressionParts)
     }
 }

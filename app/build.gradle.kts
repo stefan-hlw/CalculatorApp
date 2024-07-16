@@ -75,5 +75,5 @@ dependencies {
     // Unit Tests
     testImplementation(libs.androidx.core)
     testImplementation(libs.androidx.core.testing)
-    testImplementation(libs.truth)
+    testImplementation(libs.strikt.core)
 }
