@@ -51,5 +51,19 @@ class ExpressionWriterTest {
         expectThat(actualResult).isEqualTo(expectedResult)
     }
 
+    @Test
+    fun `Expression is empty after using clear`() {
+        writer.processAction(CalculatorAction.Parentheses)
+        writer.processAction(CalculatorAction.Number(3))
+        writer.processAction(CalculatorAction.Op(Operation.SUBTRACT))
+        writer.processAction(CalculatorAction.Number(2))
+        writer.processAction(CalculatorAction.Parentheses)
+        writer.processAction(CalculatorAction.Clear)
+
+        val expectedResult = ""
+        val actualResult = writer.expression
+
+        expectThat(actualResult).isEqualTo(expectedResult)
+    }
 
 }
