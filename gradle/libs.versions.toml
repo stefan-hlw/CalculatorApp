@@ -14,6 +14,8 @@ composeBom = "2024.06.00"
 lifecycleViewmodelCompose = "2.8.3"
 material3 = "1.2.1"
 striktCore = "0.34.0"
+googleFirebaseAppdistribution = "5.0.0"
+googleGmsGoogleServices = "4.4.2"
 
 [libraries]
 androidx-core = { module = "androidx.test:core", version.ref = "core" }
@@ -40,3 +42,5 @@ strikt-core = { module = "io.strikt:strikt-core", version.ref = "striktCore" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-firebase-appdistribution = { id = "com.google.firebase.appdistribution", version.ref = "googleFirebaseAppdistribution" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

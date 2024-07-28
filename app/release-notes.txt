@@ -1,0 +1,2 @@
+-Bitrise and Firebase integration testing
+-Release notes file testing
